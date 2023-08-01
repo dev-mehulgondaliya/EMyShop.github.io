@@ -1,4 +1,4 @@
 <h1>
-  <a href="https://dev-mehulgondaliya.github.io/EMyShop.github.io/">Demo Site</a>
+  <a target="_blank" href="https://dev-mehulgondaliya.github.io/EMyShop.github.io/">Demo Site</a>
 </h1>
 
