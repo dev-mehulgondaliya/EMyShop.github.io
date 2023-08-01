@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+// variable
+$bg-danger:#f63440;
+$bg-white:#fff;
+$bg-light-white:#f5f5f5;
+
+$primary-font:'Poppins',sans-serif;
+$text-white:#fff;
+$text-black:#000;
+$text-danger:#f63440;
+$text-gray:#aaa;
+$text-dark-gray:#777;
+
+
+body{
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    background: $bg-white;
+    color: $text-black;
+    overflow-x: hidden;
+}
+
+// custom css
+a,
+a:hover{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+.btn-danger{
+    background: $bg-danger;
+    border-color:$bg-danger;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:hover{
+        color: $text-danger;
+        background: transparent
+    }
+}
+
+
+
+@import "navigation.scss";
+@import "home.scss";
+@import "offer.scss";
+@import "products.scss";
+@import "special.scss";
+@import "testimonial.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "responsive.scss";

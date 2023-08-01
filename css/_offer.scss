@@ -1,0 +1,99 @@
+// offer section
+.offers{
+    padding-top: 8.75rem;
+
+    .offer-box .offer-img{
+
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0%;
+            left: -100%;
+            z-index: 2;
+            display: block;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right,rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+            transform: skewX(-25deg);
+        }
+
+        img{
+            transform: scale(1.02);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .offer-box:hover .offer-img{
+
+        &::before{
+            animation: effect-shine 1s;
+        }
+
+    }
+
+    .offer-overlay{
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+    }
+
+    .offer-box .offer-info{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        transition: all 250ms ease-out;
+        justify-content: center;
+        align-items: center;
+
+        .heading-bigger{
+            font-size: 4.375rem;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin: 0;
+            color: $text-white;
+        }
+
+        .offer-title-1{
+            color: $text-white;
+            font-weight: 300;
+            font-size: 1.125rem;
+            margin-bottom: 0;
+            letter-spacing: 2px;
+        }
+
+        .btn-outline-danger{
+            color: $text-white;
+            border-color: $bg-white;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                border-color: $bg-danger;
+                background-color: $bg-danger;
+            }
+        }
+    }
+}
+
+@keyframes effect-shine{
+    100%{
+        left: 150%;
+    }
+}

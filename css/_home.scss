@@ -1,0 +1,40 @@
+// home section
+.home{
+    .home-banner-1,
+    .home-banner-2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 90% center;
+        min-height: 650px;
+        position: relative;
+    }
+    .home-banner-1{
+        background-image: url(../images/slide1.jpg);
+    }
+    .home-banner-2{
+        background-image: url(../images/slide2.jpg);
+    }
+    .slider-icon{
+        width: 70px;
+
+    }
+    .home-banner .home-banner-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%,-50%);
+
+        h1{
+            font-size: 6rem;
+        }
+
+    }
+
+    .carousel-indicators [data-bs-target="#carouselExampleAutoplaying"]{
+        background-color: $bg-danger;
+        width: 2.5rem;
+        height: 0.313rem;
+    }
+
+
+}
