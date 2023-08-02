@@ -1,0 +1,29 @@
+//footer css
+
+.copyright{
+    background: $bg-danger;
+
+    p,
+    a{
+        color: $text-white;
+    }
+}
+
+#scrollUp{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    height: 2.813rem;
+    width: 2.813rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+    background-color: $bg-white;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 50%;
+}
+
+#scrollUp.scrollActive{
+    display: block;
+}

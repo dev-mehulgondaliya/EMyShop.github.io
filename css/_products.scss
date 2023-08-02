@@ -1,20 +1,8 @@
 // product css
 .products{
-    padding: 7vmin;
+    padding: 3vw;
 
-    .headline h2{
-        &::before{
-            content: '';
-            width: 30vmin;
-            height: 0.125rem;
-            background-color: $bg-danger;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            border-radius: 0.625rem;
-        }
-    }
+
 
     a{
         text-decoration: none;

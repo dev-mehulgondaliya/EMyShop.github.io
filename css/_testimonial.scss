@@ -1,0 +1,58 @@
+// testimonial css
+
+.testimonial{
+    padding: 5rem 0 8rem;
+
+    .testimonial-wrapper{
+        box-shadow: 0 0 1.563rem rgba(0 0 0 / 5%);
+        background: $bg-white;
+        margin: 1rem 5rem;
+        border: 0.063rem solid $bg-white;
+        border-radius: 0.625rem;
+
+        img{
+            border-radius: 100%;
+            width: 5rem;
+            height: 5rem;
+            margin: 1.125rem auto;
+            object-fit: cover;
+            background: $bg-white;
+            border: 0.063rem solid $bg-white;
+        }
+
+        span{
+            color: $text-gray;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: 1rem 0;
+            display: block;
+        }
+
+        p{
+            color: $text-gray;
+            font-size: 0.875rem;
+            font-weight: 300;
+        }
+    }
+
+    .carousel-indicators [data-bs-target="#carouselExampleAutoplayingTestimonial"]{
+        background-color: $bg-danger;
+        width: 2.5rem;
+        height: 0.313rem;
+    }
+
+    .carousel-indicators{
+        bottom: -3rem;
+    }
+
+    .slider-icon{
+        width: 70px;
+    }
+
+    .carousel-control-prev{
+        left: -8.75rem;
+    }
+    .carousel-control-next{
+        right: -8.75rem;
+    }
+}

@@ -47,8 +47,19 @@ p{
 
     &:hover{
         color: $text-danger;
-        background: transparent
+        background: transparent;
     }
+}
+.headline h2::before {
+    content: "";
+    width: 150px;
+    height: 0.125rem;
+    background-color: #f63440;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.625rem;
 }
 
 
